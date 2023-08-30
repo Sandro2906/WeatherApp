@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.conic-bg {
+    width: 200px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(0, 247, 255) 45deg, rgb(38, 41, 57) 210deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  @keyframes conic-bg {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .rotate-animation {
+    animation: conic-bg 10s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  .changeShadow{
+    box-shadow: 0 0 10px black;
+  }
