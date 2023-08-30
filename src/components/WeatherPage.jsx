@@ -8,7 +8,6 @@ export const WeatherPage = () => {
     const [city,setCity] = useState('');
     const [tf,setTf] = useState(false);
     const [weatherData,setWeatherData] = useState(null)
-    const [time, setTime] = useState('')
    
   
     const handleChange = async () => {
@@ -70,13 +69,15 @@ export const WeatherPage = () => {
                 </div>
                 <div className='font-bold text-xs w-[90px]'>
                 <h1 className='text-white pr-28 '>Details</h1>
-                <h1 className=''>Min/Max:</h1>
+                <h1 className=''>Max:</h1>
+                <h1>Min:</h1>
                 <h1>Feels like:</h1>
                 <h1>Wind speed:</h1>
                 </div>
                 </div>
                 <div className='text-white text-xs'>
-                    <h5 className="">{(Number(weatherData.main.temp_min- 273.15)).toFixed(1) +"/"+(Number(weatherData.main.temp_max)- 273.15).toFixed(1) }</h5>
+                    <h5 className="">{(Number(weatherData.main.temp_max)- 273.15).toFixed(1) }</h5>
+                    <h1>{(Number(weatherData.main.temp_min- 273.15)).toFixed(1)}</h1>
                     <h1 className=""> {(Number(weatherData.main.feels_like)-273.15).toFixed(1)}</h1>
                     <h1 className=""> {weatherData.wind.speed}</h1>
                 </div>
@@ -95,16 +96,3 @@ export const WeatherPage = () => {
         </div>
       </div>
 )}
-//
-//https://api.api-ninjas.com/v1/worldtime?city=London
-
-{/* <div className="w-[130px] h-[150px] text-white flex flex-col "> 
-
-  
- 
-</div> */}
-
-
-{/* 
-
- */}
