@@ -65,7 +65,7 @@ export const WeatherPage = () => {
                 <div className='w-[350px] h-[170px] flex items-center justify-start'>
                     <div className='flex text-white'>
                 <div className='pr-3'>
-                    <h1 className="text-white text-7xl pl-5 font-semibold pb-1">{(Number(weatherData.main.temp) - 273.15).toFixed(1)}C</h1>
+                    <h1 className="text-white text-6xl pl-4 font-semibold pb-1">{(Number(weatherData.main.temp) - 273.15).toFixed(1)}C</h1>
                 </div>
                 <div className='font-bold text-xs w-[90px]'>
                 <h1 className='text-white pr-28 '>Details</h1>
