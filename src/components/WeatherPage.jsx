@@ -33,7 +33,7 @@ export const WeatherPage = () => {
       <div>
 
         <div className="w-full h-[70px] bg-black flex items-center justify-center">
-          <h1 className="text-white font-nice  md:text-7xl pl-5">WorldWeather</h1>
+          <h1 className="text-white font-nice  md:text-7xl pl-5">World Weather</h1>
         </div>
         <div className="w-full h-screen bg-gray-800 flex flex-col md:flex-row items-center md:justify-around ">
           <div className="relative overflow-hidden w-[360px] h-[210px] items-center justify-center flex rounded-3xl my-12 changeShadow"> 
@@ -42,9 +42,9 @@ export const WeatherPage = () => {
             </div>
             <div className="relative z-10">
               <form onSubmit={findCity} className="flex flex-col w-[350px] h-[200px] bg-black p-2 justify-center items-center rounded-3xl">
-                <label className="text-3xl text-white pb-3 font-semibold">ENTER CITY HERE:</label>
+                <label className="text-3xl text-white pb-3 font-nice">ENTER CITY HERE:</label>
                 <input placeholder="ex. Los Angeles" value={city} onChange={ev=> setCity(ev.target.value)} type="text" className="p-2 border border-gray-800 rounded-xl" />
-                <button type='submit' onClick={findCity} className="w-[100px] h-[50px] text-black rounded-full bg-white mt-3 font-semibold hover:bg-black hover:text-white hover:border hover:border-white">SUBMIT</button>
+                <button type='submit' onClick={findCity} className="w-[100px] h-[50px] text-black rounded-full bg-white mt-3 font-nice hover:bg-black hover:text-white hover:border hover:border-white">SUBMIT</button>
               </form>
             </div>
           </div>
@@ -53,7 +53,7 @@ export const WeatherPage = () => {
              <div className="w-[350px] h-[250px] bg-black rounded-2xl  shadow-white changeShadow">
                 <div className='flex justify-between items-center bg-slate-400 rounded-t-2xl '>
                     <div>
-                        <h1 className="text-2xl text-white font-extrabold pl-4">{weatherData.name}</h1>
+                        <h1 className="text-2xl text-white font-nice pl-4">{weatherData.name}</h1>
                         <h1 className="text-white text-sm pb-1 pl-4">Weather: {weatherData.weather[0].description}</h1>
                     </div>
                     <div>
