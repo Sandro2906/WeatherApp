@@ -32,9 +32,8 @@ export const WeatherPage = () => {
        
       <div>
 
-        <div className="w-full h-[70px] bg-black flex items-center justify-between">
+        <div className="w-full h-[70px] bg-black flex items-center justify-center">
           <h1 className="text-white font-serif font-semibold md:text-3xl pl-5">WorldWeather</h1>
-          <h1 className="text-white font-serif font-semibold text-sm pr-5">Made by: Sandro Gataric</h1>
         </div>
         <div className="w-full h-screen bg-gray-800 flex flex-col md:flex-row items-center md:justify-around ">
           <div className="relative overflow-hidden w-[360px] h-[210px] items-center justify-center flex rounded-3xl my-12 changeShadow"> 
