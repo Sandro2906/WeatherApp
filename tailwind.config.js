@@ -5,6 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{nice: "Bebas Neue"}
   },
   plugins: [],
 }
