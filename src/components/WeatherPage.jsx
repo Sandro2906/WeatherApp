@@ -86,7 +86,7 @@ export const WeatherPage = () => {
              
              ) :(
                 <div className='sm:hidden'>
-                    <h1 className='text-white'>Loading...</h1>
+                    <h1 className='text-white font-nice text-5xl'>Loading...</h1>
                 </div>
              )
              }
